@@ -20,7 +20,8 @@
 	},
 	"keywords": [
 		"template",
-		"typescript"
+		"typescript",
+		"nodejs"
 	],
 	"author": "DTrombett",
 	"license": "MIT",
