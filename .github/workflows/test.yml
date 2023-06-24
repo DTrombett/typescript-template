@@ -5,9 +5,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@latest
       - name: Install dependencies with Node.js lts
-        uses: actions/setup-node
+        uses: actions/setup-node@latest
         with:
           node-version: lts
           cache: npm
