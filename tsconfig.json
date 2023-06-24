@@ -1,0 +1,20 @@
+{
+	"include": ["src"],
+	"extends": [
+		"@tsconfig/node-lts/tsconfig.json",
+		"@tsconfig/strictest/tsconfig.json"
+	],
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"alwaysStrict": true,
+		"exactOptionalPropertyTypes": false,
+		"experimentalDecorators": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"outDir": "dist",
+		"pretty": true,
+		"resolveJsonModule": true
+	}
+}

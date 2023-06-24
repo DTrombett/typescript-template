@@ -1,0 +1,48 @@
+{
+	"name": "typescript-template",
+	"version": "1.0.0",
+	"description": "A template for projects using typescript with node",
+	"main": "./dist/index.js",
+	"exports": "./dist/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsup",
+		"dev": "cross-env NODE_ENV=development npm run start",
+		"lint": "eslint src --report-unused-disable-directives --fix",
+		"prepare": "npm run build",
+		"prettier": "prettier --cache --cache-strategy metadata -w src",
+		"start": "npm run build && node --trace-warnings --enable-source-maps .",
+		"test": "tsc && eslint src --report-unused-disable-directives && prettier --cache --cache-strategy metadata -c src"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DTrombett/typescript-template.git"
+	},
+	"keywords": [
+		"template",
+		"typescript"
+	],
+	"author": "DTrombett",
+	"license": "MIT",
+	"engines": {
+		"node": "^18"
+	},
+	"bugs": {
+		"url": "https://github.com/DTrombett/typescript-template/issues"
+	},
+	"homepage": "https://github.com/DTrombett/typescript-template#readme",
+	"devDependencies": {
+		"@tsconfig/node-lts": "latest",
+		"@tsconfig/strictest": "latest",
+		"@types/node": "^18.16.18",
+		"@typescript-eslint/eslint-plugin": "latest",
+		"@typescript-eslint/parser": "latest",
+		"cross-env": "latest",
+		"dotenv": "latest",
+		"eslint": "latest",
+		"eslint-plugin-node": "latest",
+		"prettier": "latest",
+		"tsup": "latest",
+		"typescript": "latest"
+	}
+}
