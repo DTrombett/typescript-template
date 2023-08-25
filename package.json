@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"@tsconfig/node-lts": "latest",
 		"@tsconfig/strictest": "latest",
-		"@types/node": "^18.16.18",
+		"@types/node": "^18.17.11",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
 		"cross-env": "latest",
